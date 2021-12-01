@@ -107,8 +107,6 @@
     $t3 -> setAge(42);
     $t3->setKlasa($k3);
 
-
-
     // Przedmiot :
 
     $p1 = new Przedmiot();
@@ -163,19 +161,6 @@
     $p5->setKlasa($k3);
     $p6->setKlasa($k3);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     $em->persist($u1);
     $em->persist($u2);
     $em->persist($u3);
@@ -198,5 +183,3 @@
     $em->persist($p5);
     $em->persist($p6);
     $em->flush();
-
-
