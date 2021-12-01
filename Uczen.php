@@ -91,24 +91,4 @@ class Uczen
     {
         return $this->klasa;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

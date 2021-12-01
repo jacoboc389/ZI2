@@ -89,6 +89,4 @@ class Klasa
     {
         $this->przedmioty[] = $przedmiot;
     }
-
-
 }

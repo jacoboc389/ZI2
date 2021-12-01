@@ -20,21 +20,13 @@ class Przedmiot
      */
     protected $name;
     /**
-     * @Column(type="string")
-     */
-
-    /**
      * @ManyToOne(targetEntity="Nauczyciel", inversedBy="przedmioty")
      */
     protected $nauczyciel;
-
     /**
      * @ManyToOne(targetEntity="Klasa", inversedBy="przedmioty")
      */
     protected $klasa;
-
-
-
 
     public function getName()
     {
@@ -44,8 +36,6 @@ class Przedmiot
     {
         $this->name = $name;
     }
-
-
     public function setNauczyciel(Nauczyciel $nauczyciel)
     {
         $nauczyciel->addPrzedmiot($this);
@@ -55,7 +45,6 @@ class Przedmiot
     {
         return $this->nauczyciel;
     }
-
     public function setKlasa(Klasa $klasa)
     {
         $klasa->addPrzedmiot($this);
@@ -65,17 +54,4 @@ class Przedmiot
     {
         return $this->klasa;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

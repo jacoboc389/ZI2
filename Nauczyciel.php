@@ -38,11 +38,6 @@ class Nauczyciel
      */
     protected $przedmioty;
 
-
-
-
-
-
     public function getId()
     {
         return $this->id;
@@ -76,16 +71,6 @@ class Nauczyciel
     {
         $this->age = $age;
     }
-
-
-
-
-
-
-
-
-
-
     public function setKlasa(Klasa $klasa)
     {
         $klasa->addNauczyciel($this);
@@ -95,15 +80,8 @@ class Nauczyciel
     {
         return $this->klasa;
     }
-
-
-
     public function addPrzedmiot(Przedmiot $przedmiot)
     {
         $this->przedmioty[] = $przedmiot;
     }
-
-
-
-
 }
